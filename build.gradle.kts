@@ -45,6 +45,10 @@ tasks.named<Jar>("jar") {
     archiveBaseName.set(project.property("mod_name").toString())
     archiveVersion.set(project.property("version").toString())
 }
+tasks.named("prepareRunServer") {
+    doNotTrackState("Bypass unsupported file type tracking issue")
+}
+
 
 // Uncomment if you are using IntelliJ.
 // idea {

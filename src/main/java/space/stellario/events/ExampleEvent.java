@@ -1,4 +1,4 @@
-package dev.hytalemodding.events;
+package space.stellario.events;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
@@ -16,7 +16,7 @@ public class ExampleEvent {
             Store<EntityStore> store = ref.getStore();
             PlayerRef playerRef = store.getComponent(ref, PlayerRef.getComponentType());
             if (playerRef != null) {
-                playerRef.sendMessage(Message.raw("Welcome " + playerRef.getUsername()));
+                playerRef.sendMessage(Message.raw("<3 Welcome " + playerRef.getUsername()));
             }
         }
     }
